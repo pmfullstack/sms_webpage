@@ -1,0 +1,19 @@
+# Deny access to .htaccess / Restrict to open htaccess file
+
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Restrict to open config file
+
+<Files config.*>
+Order allow,deny
+Deny from all
+Require all denied
+</Files>
+
+# Disable directory browsing / Restrict Directory Lising
+
+Options -Indexes
+
