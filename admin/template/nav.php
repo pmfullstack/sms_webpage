@@ -18,6 +18,11 @@
             <i class="fas fa-user-plus"></i>
             <span>File Upload</span></a>
     </li>
+    <li class="nav-item active">
+        <a class="nav-link " href="home.php?page=add_number">
+            <i class="fas fa-mobile"></i>
+            <span>Add Number</span></a>
+    </li>
     <!-- Divider -->
     <hr class="sidebar-divider">
     <!-- Sidebar Toggler (Sidebar) -->
