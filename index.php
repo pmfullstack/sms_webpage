@@ -4,7 +4,7 @@
 
 <head>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,7 +35,7 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <img src="./img/logo-new.jpeg" style="margin-bottom: .8rem;">
+                                        <img src="img/logo.jpg" style="margin-bottom: .8rem;">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome !</h1>
                                     </div>
                                     <p><?php if (isset($_SESSION['login_errmsg'])) {

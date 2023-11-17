@@ -11,20 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($count > 0) {
         // Mobile number found
-        include 'congratulation_page.php';
+        include 'congratulation.php';
     } else {
-        // Mobile number not found
-        echo '<div class="card text-center mt-3">
-                <div class="card-header">
-                    Not Found
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Mobile Number Not Found</h5>
-                    <p class="card-text">Your custom content for a not found number goes here.</p>
-                </div>
-                <div class="card-footer text-muted">
-                    Footer content for a not found number.
-                </div>
-            </div>';
+        include 'not_found.php';
     }
 }

@@ -46,7 +46,8 @@
                             <div class="modal-body">
                                 <form id="mobileForm">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name='mobileNumber' id="mobileNumber" placeholder="Please write without country code" required>
+                                        <label>Please write number without country code</label>
+                                        <input type="tel" class="form-control" name='mobileNumber' id="mobileNumber" placeholder="Please write number without country code" pattern="[0-9]+" required>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Check Number</button>
                                 </form>
@@ -69,6 +70,7 @@
             // Show the modal on page load
             $('#myModal').modal({
                 backdrop: 'static', // Prevent closing when clicking on the background
+                keyboard: false // Prevent closing with the keyboard
             });
 
             // AJAX call on form submission

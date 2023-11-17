@@ -27,9 +27,10 @@ if (!empty($_FILES['file']['name']) && in_array($_FILES['file']['type'], $excelM
         foreach ($worksheet_arr as $row) {
             $phone_number = $row[0];
             $name = $row[1];
+            $loanNo = $row[2];
 
             // Insert member data in the database 
-            mysqli_query($con, "INSERT INTO data_dump (phone_number, name) VALUES ('" . $phone_number . "', '" . $name . "')");
+            mysqli_query($con, "INSERT INTO data_dump (phone_number, name, loan_no) VALUES ('" . $phone_number . "', '" . $name . "', '" . $loanNo . "')");
         }
 
         $adminmsg = array("success" => true, "message" => "Uploaded successfully");

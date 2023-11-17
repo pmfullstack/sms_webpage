@@ -5,6 +5,7 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="my-3 font-weight-bold text-primary">File Upload</h6>
+            <a class="btn btn-primary float-right mr-5 mt-n5" href='../img/sample.xlsx'>Sample File</a>
         </div>
         <div class="card-body">
             <form class="form-horizontal" enctype="multipart/form-data" id="data">

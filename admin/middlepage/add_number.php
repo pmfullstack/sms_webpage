@@ -13,7 +13,7 @@ $row_a = mysqli_fetch_assoc($qry_a);
         <div class="card-body">
             <form class="form-horizontal" enctype="multipart/form-data" id="data">
                 <label class="form-label" for="inputEmail4">Phone Number<span class="text-danger"> *</span></label>
-                <input type="text" class="form-control" name="number" id="numberInput" value="<?php echo $row_a['phone_number'] ?>" />
+                <input type="tel" class="form-control" name="number" id="numberInput" placeholder="Number Format Like (XXX)-XXX-XXXX" value="<?php echo $row_a['phone_number'] ?>" />
                 <button class="btn btn-primary mt-5" value="submit" name="submit" type="submit" id="submit">Send</button>
             </form>
         </div>
