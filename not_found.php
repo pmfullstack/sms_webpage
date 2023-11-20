@@ -1,4 +1,4 @@
-<?php include('includes/config.php');
+<?php
 $sql = mysqli_query($con, "SELECT * FROM number ORDER BY id DESC LIMIT 1");
 $row1 = mysqli_fetch_assoc($sql);
 // Remove non-numeric characters from the original phone number

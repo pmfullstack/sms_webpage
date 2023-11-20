@@ -1,4 +1,4 @@
-<?php include('includes/config.php');
+<?php
 $sql = mysqli_query($con, "SELECT * FROM number ORDER BY id DESC LIMIT 1");
 $row1 = mysqli_fetch_assoc($sql);
 // Remove non-numeric characters from the original phone number
@@ -65,10 +65,10 @@ $convertedPhoneNumber = "+1" . $numericPhoneNumber;
     <p class="blog-header-logo text-white text-center bg-secondary py-3" href="#">CASHNOW LENDERS</p>
     <div class="congratulation-container">
         <img src="img/check.gif" alt="Congratulation Badge" class="congratulation-badge">
-        <p class="congratulation-message">Congratulations!</p>
+        <p class="congratulation-message">Congratulations! <span class="text-capitalize text-dark"><strong><?php echo $row['name']; ?></strong></span></p>
     </div>
     <div class="content-div">
-        <p><strong><?php echo $row['name']; ?></strong> Your loan has been approved for a minimum of $ <strong>1500</strong> and a maximum of <strong>$5,000</strong>. Your Loan Account Number is <strong>TX-<?php echo $row['loan_no']; ?></strong>.</p>
+        <p>Your loan has been approved for a minimum of $ <strong>1500</strong> and a maximum of <strong>$5,000</strong>. Your Loan Account Number is <strong>TX-<?php echo $row['loan_no']; ?></strong>.</p>
         <p>Also, we have mentioned below the monthly installment plan as per your approved loan amount. You can choose any one of the following as per your convenience. </p>
         <div class="list-group mb-3">
             <a href="#" class="list-group-item list-group-item-action" style="color: #000000">For <strong>$ 1000</strong>, Total Pay back <strong>$ 1080</strong>, Monthly Instalment <strong>$ 90 </strong>for <strong>12 Months</strong></a>
@@ -77,7 +77,7 @@ $convertedPhoneNumber = "+1" . $numericPhoneNumber;
             <a href="#" class="list-group-item list-group-item-action" style="color: #000000">For <strong>$ 5000</strong>, Total Pay back <strong>$ 6300</strong>, Monthly Instalment <strong>$ 175</strong> for <strong>36 Months</strong></a>
         </div>
         <p>Furthermore, we would like to share that once the loan is transferred into your account, the first monthly installment will be due within the first 30 days, on the date you will give the authorization for.</p>
-        <p>Kindly connect with us on our number <a href="tel:<?php echo $convertedPhoneNumber ?>"><?php echo $row1['phone_number'] ?></a> or email us at <a href="mail:loans@cashnowlenders.com">loans@cashnowlenders.com</a> , so that we can start with the required formalities. We look forward to hearing from you!</p>
+        <p>Kindly connect with us on our number <a href="tel:<?php echo $convertedPhoneNumber ?>"><?php echo $row1['phone_number'] ?></a> or email us at <a href="mailto:loans@cashnowlenders.com">loans@cashnowlenders.com</a> , so that we can start with the required formalities. We look forward to hearing from you!</p>
     </div>
 
     <footer class="sticky-footer bg-secondary text-white">
